@@ -1,6 +1,7 @@
 "use client"
 
 import { Award, Building, Users, Zap, Linkedin } from "lucide-react"
+import Image from "next/image"
 import Navbar from "../../components/navbar"
 import { useEffect, useState } from "react"
 
@@ -120,6 +121,12 @@ export default function About() {
               <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-[#D4AF37]/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
 
               <div className="relative z-10">
+                {/* Founder photo */}
+                <div className="mb-6 flex justify-center">
+                  <div className="relative w-28 h-28 rounded-2xl overflow-hidden shadow-lg ring-1 ring-[#D4AF37]/20">
+                    <Image src="/placeholder-user.jpg" alt="Vedant Soni" fill className="object-cover" />
+                  </div>
+                </div>
                 <div className="w-16 h-16 bg-gradient-to-br from-gray-50 via-white to-gray-100 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-all duration-500 shadow-lg group-hover:shadow-xl relative">
                   <Award className="w-8 h-8 text-[#D4AF37] group-hover:text-[#F7DC6F] transition-colors duration-300" />
                   <div className="absolute inset-0 bg-gradient-to-br from-[#D4AF37]/10 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
@@ -187,6 +194,12 @@ export default function About() {
               <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-[#D4AF37]/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
 
               <div className="relative z-10">
+                {/* Co-founder photo */}
+                <div className="mb-6 flex justify-center">
+                  <div className="relative w-28 h-28 rounded-2xl overflow-hidden shadow-lg ring-1 ring-[#D4AF37]/20">
+                    <Image src="/placeholder-user.jpg" alt="Dhruv Bhambani" fill className="object-cover" />
+                  </div>
+                </div>
                 <div className="w-16 h-16 bg-gradient-to-br from-gray-50 via-white to-gray-100 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-all duration-500 shadow-lg group-hover:shadow-xl relative">
                   <Users className="w-8 h-8 text-[#D4AF37] group-hover:text-[#F7DC6F] transition-colors duration-300" />
                   <div className="absolute inset-0 bg-gradient-to-br from-[#D4AF37]/10 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
@@ -212,29 +225,25 @@ export default function About() {
                   <div className="flex items-start gap-3">
                     <div className="w-2 h-2 bg-gradient-to-r from-[#D4AF37] to-[#F7DC6F] rounded-full mt-2 flex-shrink-0" />
                     <p className="text-gray-600 font-light leading-relaxed">
-                      <span className="font-medium text-[#D4AF37]">Business Development</span> — Specializes in
-                      identifying automation opportunities and business process optimization
+                      <span className="font-medium text-[#D4AF37]">Licensed Real Estate Professional</span> — Holds an active real estate license with extensive experience in property management, brokerage, and lending across commercial, multi-family, and residential sectors.
                     </p>
                   </div>
                   <div className="flex items-start gap-3">
                     <div className="w-2 h-2 bg-gradient-to-r from-[#D4AF37] to-[#F7DC6F] rounded-full mt-2 flex-shrink-0" />
                     <p className="text-gray-600 font-light leading-relaxed">
-                      <span className="font-medium text-[#D4AF37]">Real Estate Focus</span> — Deep understanding of real
-                      estate workflows and pain points from extensive market research
+                      <span className="font-medium text-[#D4AF37]">Asset Management</span> — Worked with asset management companies overseeing 500+ units and underwriting multiple real estate deals, developing a strong foundation in investment analysis and operations.
                     </p>
                   </div>
                   <div className="flex items-start gap-3">
                     <div className="w-2 h-2 bg-gradient-to-r from-[#D4AF37] to-[#F7DC6F] rounded-full mt-2 flex-shrink-0" />
                     <p className="text-gray-600 font-light leading-relaxed">
-                      <span className="font-medium text-[#D4AF37]">Client Relations</span> — Ensures seamless
-                      communication and project delivery for all automation implementations
+                      <span className="font-medium text-[#D4AF37]">Marketing & Growth</span> — Experienced in real estate marketing and social media advertising, leveraging digital platforms to build brand presence and generate leads.
                     </p>
                   </div>
                   <div className="flex items-start gap-3">
                     <div className="w-2 h-2 bg-gradient-to-r from-[#D4AF37] to-[#F7DC6F] rounded-full mt-2 flex-shrink-0" />
                     <p className="text-gray-600 font-light leading-relaxed">
-                      <span className="font-medium text-[#D4AF37]">Strategic Planning</span> — Develops comprehensive
-                      automation roadmaps tailored to each client's unique needs
+                      <span className="font-medium text-[#D4AF37]">Tech & Innovation</span> — Aspiring robotics student at Texas A&M with a passion for machine learning and electronics, driven to apply automation and technology to optimize business processes.
                     </p>
                   </div>
                 </div>

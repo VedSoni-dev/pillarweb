@@ -102,7 +102,7 @@ export default function GetStartedPage() {
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">Website or LinkedIn</label>
                   <input
-                    type="url"
+                    type="text"
                     value={formData.website}
                     onChange={(e) => handleInputChange("website", e.target.value)}
                     className="w-full px-4 py-3 bg-white/60 border border-gray-200/50 rounded-xl text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#D4AF37]/50 focus:border-[#D4AF37]/50 transition-all duration-200 backdrop-blur-sm"
@@ -115,7 +115,7 @@ export default function GetStartedPage() {
                   <div className="space-y-3 text-gray-700">
                     <div className="flex items-center gap-3">
                       <Mail className="w-4 h-4 text-[#D4AF37]" />
-                      <span>hello@pillar-ai.com</span>
+                      <span>pillaraitech@gmail.com</span>
                     </div>
                     <div className="flex items-center gap-3">
                       <Phone className="w-4 h-4 text-[#D4AF37]" />
