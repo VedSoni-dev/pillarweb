@@ -124,7 +124,7 @@ export default function About() {
                 {/* Founder photo */}
                 <div className="mb-6 flex justify-center">
                   <div className="relative w-28 h-28 rounded-full overflow-hidden shadow-lg ring-1 ring-[#D4AF37]/20">
-                    <Image src="/placeholder-user.jpg" alt="Vedant Soni" fill className="object-cover" />
+                    <Image src="/vedant-soni.jpg" alt="Vedant Soni" fill className="object-cover" />
                   </div>
                 </div>
                 <div className="w-16 h-16 bg-gradient-to-br from-gray-50 via-white to-gray-100 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-all duration-500 shadow-lg group-hover:shadow-xl relative">
@@ -197,7 +197,7 @@ export default function About() {
                 {/* Co-founder photo */}
                 <div className="mb-6 flex justify-center">
                   <div className="relative w-28 h-28 rounded-full overflow-hidden shadow-lg ring-1 ring-[#D4AF37]/20">
-                    <Image src="/placeholder-user.jpg" alt="Dhruv Bhambani" fill className="object-cover" />
+                    <Image src="/dhruv-bhambani.jpg" alt="Dhruv Bhambani" fill className="object-cover" />
                   </div>
                 </div>
                 <div className="w-16 h-16 bg-gradient-to-br from-gray-50 via-white to-gray-100 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-all duration-500 shadow-lg group-hover:shadow-xl relative">
