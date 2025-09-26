@@ -66,7 +66,7 @@ export default function GetStartedModal({ isOpen, onClose }: GetStartedModalProp
       <div className="absolute inset-0 bg-black/40 backdrop-blur-md" onClick={resetModal} />
 
       {/* Modal */}
-      <div className="relative w-full max-w-lg bg-white/90 backdrop-blur-xl border border-white/20 rounded-3xl overflow-hidden shadow-2xl">
+      <div className="relative w-full max-w-lg bg-white/90 backdrop-blur-xl border border-white/20 rounded-3xl overflow-hidden shadow-2xl mt-16">
         {/* Close button */}
         <button
           onClick={resetModal}
