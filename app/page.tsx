@@ -3,7 +3,7 @@
 import { ArrowRight, Clock, TrendingUp, BarChart3 } from "lucide-react"
 import Navbar from "../components/navbar"
 import { useEffect, useState } from "react"
-import GetStartedModal from "../components/get-started-modal"
+import Link from "next/link"
 
 export default function Home() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
@@ -95,8 +95,8 @@ export default function Home() {
               </p>
 
               <div className="relative group">
-                <button
-                  onClick={() => setIsModalOpen(true)}
+                <Link
+                  href="/get-started"
                   className="relative bg-gradient-to-r from-[#111111] via-gray-800 to-[#111111] text-white px-10 py-4 rounded-full text-lg font-light hover:shadow-2xl transform transition-all duration-700 hover:scale-[1.02] inline-flex items-center gap-3 overflow-hidden border border-[#D4AF37]/20 hover:border-[#D4AF37]/40"
                   style={{
                     transform: `translateX(${(mousePosition.x - getWindowDimensions().width / 2) * 0.005}px) translateY(${(mousePosition.y - getWindowDimensions().height / 2) * 0.005}px)`,
@@ -105,7 +105,7 @@ export default function Home() {
                   <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
                   <span className="relative z-10">Build Smarter with Pillar</span>
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300 relative z-10" />
-                </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -289,7 +289,7 @@ export default function Home() {
         </div>
       </footer>
 
-      <GetStartedModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
+      {/* Modal removed: direct navigation to /get-started */}
     </div>
   )
 }

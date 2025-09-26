@@ -1,7 +1,7 @@
 "use client"
 
 import Navbar from "../../components/navbar"
-import GetStartedModal from "../../components/get-started-modal"
+import Link from "next/link"
 import { useState, useEffect } from "react"
 import { ArrowRight, CheckCircle, Clock, TrendingUp, Users } from "lucide-react"
 
@@ -216,8 +216,8 @@ export default function PricingPage() {
             </p>
 
             <div className="relative group inline-block">
-              <button
-                onClick={() => setIsModalOpen(true)}
+              <Link
+                href="/get-started"
                 className="relative bg-gradient-to-r from-[#111111] via-gray-800 to-[#111111] text-white px-12 py-5 rounded-full text-lg font-light hover:shadow-2xl transform transition-all duration-700 hover:scale-[1.05] inline-flex items-center gap-3 border-2 border-[#D4AF37]/20 hover:border-[#D4AF37]/40 overflow-hidden"
                 style={{
                   transform: `translateX(${(mousePosition.x - windowDimensions.width / 2) * 0.003}px) translateY(${(mousePosition.y - windowDimensions.height / 2) * 0.003}px)`,
@@ -227,7 +227,7 @@ export default function PricingPage() {
                 <div className="absolute inset-0 bg-gradient-to-r from-[#D4AF37]/0 via-[#D4AF37]/10 to-[#D4AF37]/0 opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
                 <span className="relative z-10">Get Your Custom Quote</span>
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300 relative z-10" />
-              </button>
+              </Link>
 
               <div className="absolute inset-0 bg-gradient-to-r from-[#D4AF37]/20 to-[#F7DC6F]/20 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-700 -z-10 scale-150" />
             </div>
@@ -244,7 +244,7 @@ export default function PricingPage() {
         </div>
       </footer>
 
-      <GetStartedModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
+      {/* Modal removed: direct navigation to /get-started */}
     </div>
   )
 }

@@ -3,12 +3,10 @@
 import { Menu, X } from "lucide-react"
 import { useState, useEffect } from "react"
 import Link from "next/link"
-import GetStartedModal from "./get-started-modal"
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [scrollY, setScrollY] = useState(0)
-  const [isModalOpen, setIsModalOpen] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => setScrollY(window.scrollY)
@@ -59,12 +57,12 @@ export default function Navbar() {
                 About
                 <div className="absolute -bottom-1 left-0 w-0 h-px bg-[#D4AF37] transition-all duration-300 group-hover:w-full"></div>
               </Link>
-              <button
-                onClick={() => setIsModalOpen(true)}
+              <Link
+                href="/get-started"
                 className="bg-gradient-to-r from-[#D4AF37] to-[#F7DC6F] text-white px-6 py-2 rounded-full text-sm font-light hover:shadow-lg transform hover:scale-105 transition-all duration-300 border border-[#D4AF37]/20"
               >
                 Get Started
-              </button>
+              </Link>
             </div>
 
             {/* Mobile Menu Button */}
@@ -104,21 +102,19 @@ export default function Navbar() {
               >
                 About
               </Link>
-              <button
-                onClick={() => {
-                  setIsModalOpen(true)
-                  setIsMenuOpen(false)
-                }}
+              <Link
+                href="/get-started"
+                onClick={() => setIsMenuOpen(false)}
                 className="w-full bg-gradient-to-r from-[#D4AF37] to-[#F7DC6F] text-white px-6 py-3 rounded-full text-sm font-light mt-4 block text-center"
               >
                 Get Started
-              </button>
+              </Link>
             </div>
           </div>
         </div>
       </div>
 
-      <GetStartedModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
+      {/* Modal removed: direct navigation to /get-started */}
     </nav>
   )
 }
