@@ -123,7 +123,7 @@ export default function About() {
               <div className="relative z-10">
                 {/* Founder photo */}
                 <div className="mb-6 flex justify-center">
-                  <div className="relative w-28 h-28 rounded-2xl overflow-hidden shadow-lg ring-1 ring-[#D4AF37]/20">
+                  <div className="relative w-28 h-28 rounded-full overflow-hidden shadow-lg ring-1 ring-[#D4AF37]/20">
                     <Image src="/placeholder-user.jpg" alt="Vedant Soni" fill className="object-cover" />
                   </div>
                 </div>
@@ -196,7 +196,7 @@ export default function About() {
               <div className="relative z-10">
                 {/* Co-founder photo */}
                 <div className="mb-6 flex justify-center">
-                  <div className="relative w-28 h-28 rounded-2xl overflow-hidden shadow-lg ring-1 ring-[#D4AF37]/20">
+                  <div className="relative w-28 h-28 rounded-full overflow-hidden shadow-lg ring-1 ring-[#D4AF37]/20">
                     <Image src="/placeholder-user.jpg" alt="Dhruv Bhambani" fill className="object-cover" />
                   </div>
                 </div>
