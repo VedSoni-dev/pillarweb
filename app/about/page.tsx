@@ -1,6 +1,6 @@
 "use client"
 
-import { Award, Building, Users, Zap } from "lucide-react"
+import { Award, Building, Users, Zap, Linkedin } from "lucide-react"
 import Navbar from "../../components/navbar"
 import { useEffect, useState } from "react"
 
@@ -125,9 +125,21 @@ export default function About() {
                   <div className="absolute inset-0 bg-gradient-to-br from-[#D4AF37]/10 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 </div>
 
-                <h3 className="text-2xl font-light text-[#111111] mb-6 tracking-tight group-hover:text-[#D4AF37] transition-colors duration-300">
+                <h3 className="text-2xl font-light text-[#111111] mb-2 tracking-tight group-hover:text-[#D4AF37] transition-colors duration-300">
                   Lead Founder & Technical Architect
                 </h3>
+                <div className="mb-6">
+                  <h4 className="text-xl font-medium text-[#D4AF37] mb-2">Vedant Soni</h4>
+                  <a 
+                    href="https://www.linkedin.com/in/vedantsonimech" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-gray-600 hover:text-[#D4AF37] transition-colors duration-300"
+                  >
+                    <Linkedin className="w-4 h-4" />
+                    <span className="text-sm">LinkedIn Profile</span>
+                  </a>
+                </div>
 
                 <div className="space-y-4 mb-8">
                   <div className="flex items-start gap-3">
@@ -180,9 +192,21 @@ export default function About() {
                   <div className="absolute inset-0 bg-gradient-to-br from-[#D4AF37]/10 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 </div>
 
-                <h3 className="text-2xl font-light text-[#111111] mb-6 tracking-tight group-hover:text-[#D4AF37] transition-colors duration-300">
+                <h3 className="text-2xl font-light text-[#111111] mb-2 tracking-tight group-hover:text-[#D4AF37] transition-colors duration-300">
                   Co-Founder & Business Strategy
                 </h3>
+                <div className="mb-6">
+                  <h4 className="text-xl font-medium text-[#D4AF37] mb-2">Dhruv Bhambani</h4>
+                  <a 
+                    href="https://www.linkedin.com/in/dhruvbhambhani05/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-gray-600 hover:text-[#D4AF37] transition-colors duration-300"
+                  >
+                    <Linkedin className="w-4 h-4" />
+                    <span className="text-sm">LinkedIn Profile</span>
+                  </a>
+                </div>
 
                 <div className="space-y-4 mb-8">
                   <div className="flex items-start gap-3">
