@@ -197,7 +197,7 @@ export default function About() {
                 {/* Co-founder photo */}
                 <div className="mb-6 flex justify-center">
                   <div className="relative w-40 h-40 rounded-full overflow-hidden shadow-lg ring-1 ring-[#D4AF37]/20">
-                    <Image src="/dhruv-bhambani.jpg" alt="Dhruv Bhambani" fill className="object-cover" />
+                    <Image src="/dhruv-bhambhani.jpg" alt="Dhruv Bhambhani" fill className="object-cover" />
                   </div>
                 </div>
                 <div className="w-16 h-16 bg-gradient-to-br from-gray-50 via-white to-gray-100 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-all duration-500 shadow-lg group-hover:shadow-xl relative">
@@ -209,7 +209,7 @@ export default function About() {
                   Co-Founder & Business Strategy
                 </h3>
                 <div className="mb-6">
-                  <h4 className="text-xl font-medium text-[#D4AF37] mb-2">Dhruv Bhambani</h4>
+                  <h4 className="text-xl font-medium text-[#D4AF37] mb-2">Dhruv Bhambhani</h4>
                   <a 
                     href="https://www.linkedin.com/in/dhruvbhambhani05/" 
                     target="_blank" 
