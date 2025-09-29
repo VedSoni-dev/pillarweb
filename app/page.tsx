@@ -193,7 +193,7 @@ export default function Home() {
               href="/industries"
               className="inline-flex items-center gap-2 text-[#D4AF37] hover:text-[#C19B2A] transition-colors duration-300 font-medium"
             >
-              Click here to explore other industries
+              Click here
               <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
