@@ -182,6 +182,24 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Non-Real Estate Box */}
+      <section className="py-16 px-6 bg-gradient-to-b from-white via-gray-50/20 to-white relative">
+        <div className="max-w-4xl mx-auto">
+          <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 border border-gray-100/50 hover:border-[#D4AF37]/30 transition-all duration-300 text-center">
+            <p className="text-lg font-light text-gray-600 mb-4">
+              Not in real estate? Amazing.
+            </p>
+            <Link 
+              href="/industries"
+              className="inline-flex items-center gap-2 text-[#D4AF37] hover:text-[#C19B2A] transition-colors duration-300 font-medium"
+            >
+              Click here to explore other industries
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
       <section className="py-32 px-6 bg-gradient-to-b from-white via-gray-50/20 to-white relative">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-24">
