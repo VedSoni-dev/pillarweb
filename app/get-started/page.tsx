@@ -119,7 +119,7 @@ export default function GetStartedPage() {
                     </div>
                     <div className="flex items-center gap-3">
                       <Phone className="w-4 h-4 text-[#D4AF37]" />
-                      <span>(555) 987-6543</span>
+                      <span>8329718937</span>
                     </div>
                     <div className="flex items-center gap-3">
                       <MessageCircle className="w-4 h-4 text-[#D4AF37]" />
